@@ -13,7 +13,9 @@
     <h1 class="logo">Café Progate</h1>
     <div class="menu-items">
       <?php foreach ($menus as $menu): ?>
-      <h3><?php echo $menu->name ?></h3>
+        <img src="<?php echo $menu->image ?>">
+        <h3><?php echo $menu->name ?></h3>
+        <p><?php echo $menu->price ?></p>
       <?php endforeach ?>
     </div>
   </div>
