@@ -10,4 +10,8 @@ class Menu
     $this->price = $price;
     $this->image = $image;
   }
+
+  public function getTaxIncludedPrice() {
+    return floor($this->price * 1.08);
+  }
 }
