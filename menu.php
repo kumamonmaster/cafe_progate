@@ -35,4 +35,8 @@ class Menu
   public function getTaxIncludedPrice() {
     return floor($this->price * 1.08);
   }
+
+  public function getTotalPrice() {
+    return $this->getTaxIncludedPrice() * $this->orderCount;
+  }
 }
